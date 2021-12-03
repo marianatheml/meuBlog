@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&family=Oxygen:wght@700&family=Rubik&family=Sen:wght@700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+padding: 5px 200px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+header img {
+    color: black;
+    width: 50px;
+}
+
+header a {
+    letter-spacing: 2px;
+    font-family: 'Sen', sans-serif;
+    font-size: 15px;
+    text-decoration: none;
+    color: black;
+}
+
+header ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header ul li {
+    list-style: none;
+    margin: 20px;
+}
+
+header ul li a {
+    text-decoration: none;
+    padding: 6px 15px;
+    cursor: pointer;
+    font-family: 'Sen', sans-serif;
+    font-size: 20px;
+    color: black;
+    border-radius: 20px;
+}
+
+header ul li a:hover {
+    background-color: #502E7D;
+    color: white;
+    transform: scale(0.9);
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in;
+    transition-property: all;
+}
