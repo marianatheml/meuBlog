@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&family=Sen:wght@700&display=swap');
+
+#img-bg {
+    background-image: url('../../assets/loginillustration.png');
+    min-height: 100vh;
+    background-position:center ;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.login-title a {
+    display: flex;
+    text-decoration: none;
+    letter-spacing: 7px;
+    font-family: 'Nunito', sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    color: #502E7D;
+    align-items: center;
+    padding: 0 25px;
+}
+
+.login-title a img {
+    width: 50px;
+    margin-right: 20px;
+}
+
+.login-subtitle {
+    font-family: 'Nunito', sans-serif;
+    font-weight: bold;
+    font-size: 25px;
+    letter-spacing: 2px;
+    padding: 25px 25px 0 25px;
+    color: #502E7D; 
+}
+
+hr {
+    color: #502E7D;
+    margin: 15px;
+}
+
+.form {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 25px;
+}
+
+.form-group label {
+    font-family: 'Nunito', sans-serif;
+    font-size: 20px;
+    color: #502E7D;
+    font-weight: bold;
+}
+
+.form-control {
+    font-family: 'Nunito', sans-serif;
+    font-size: 14px;
+    color: #726CA0;
+    padding: 15px;
+    align-items: center;
+    border-radius: 25px;
+    width: 250px;
+}
+
+button{
+    width: 150px;
+    height: 40px;
+    background: #502E7D;
+    border-radius: 80px;
+    font-family: 'Nunito', sans-serif;
+    font-size: 15px;
+    color: white;
+    font-weight: bold;
+}
+
+button:hover {
+    background: #F4143C;
+    transform: scale(0.95);
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in;
+    transition-property: all;
+}
+
+.form-control:focus {
+    border-width: 3px;
+    border-color: #502E7D;
+    box-shadow: 0 0 0 0 ;
+    outline: 0;
+}
