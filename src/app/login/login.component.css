@@ -39,6 +39,11 @@
     text-decoration: none;
 }
 
+.login-subtitle a:hover {
+    color: #F4143C;
+    font-weight: bold;
+}
+
 hr {
     color: #502E7D;
 }
@@ -57,6 +62,13 @@ hr {
     padding: 25px;
     align-items: center;
     border-radius: 25px;
+}
+
+.form-control:focus {
+    border-width: 3px;
+    border-color: #502E7D;
+    box-shadow: 0 0 0 0 ;
+    outline: 0;
 }
 
 button{
