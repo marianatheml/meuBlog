@@ -49,25 +49,27 @@ hr {
 }
 
 .form-group label {
+    display: flex;
+    flex-direction: column;
     font-family: 'Nunito', sans-serif;
     font-size: 20px;
     color: #502E7D;
     font-weight: bold;
 }
 
-.form-group input {
+.form-field {
     font-family: 'Nunito', sans-serif;
     font-size: 14px;
     color: #726CA0;
-    padding: 25px;
-    align-items: center;
+    padding: 10px;
     border-radius: 25px;
+    width: 100%;
+    border: thin  solid  #726CA0;
 }
 
-.form-control:focus {
-    border-width: 3px;
+.form-field:focus {
+    border: medium  groove  #502E7D;
     border-color: #502E7D;
-    box-shadow: 0 0 0 0 ;
     outline: 0;
 }
 

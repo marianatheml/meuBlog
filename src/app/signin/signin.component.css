@@ -30,7 +30,7 @@
     font-size: 22px;
     font-weight: bolder;
     letter-spacing: 2px;
-    padding: 40px 25px 0 25px;
+    padding: 30px 25px 0 25px;
     color: #502E7D; 
 }
 
@@ -45,27 +45,29 @@ hr {
     padding: 0 25px 0 25px;
 }
 
-.form-group label {
+.form-group {
+    display: flex;
+    flex-direction: column;
     font-family: 'Nunito', sans-serif;
     font-size: 20px;
     color: #502E7D;
     font-weight: bold;
 }
 
-.form-control {
+.form-field {
     font-family: 'Nunito', sans-serif;
     font-size: 14px;
     color: #726CA0;
-    padding: 15px;
+    padding: 10px;
     align-items: center;
     border-radius: 25px;
     width: 250px;
+    border: thin  solid  #726CA0;
 }
 
-.form-control:focus {
-    border-width: 3px;
+.form-field:focus {
+    border: medium  groove  #502E7D;
     border-color: #502E7D;
-    box-shadow: 0 0 0 0 ;
     outline: 0;
 }
 
