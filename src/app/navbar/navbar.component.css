@@ -7,7 +7,7 @@
 }
 
 header {
-position: absolute;
+position: static;
 top: 0;
 left: 0;
 width: 100%;
@@ -17,9 +17,24 @@ justify-content: space-between;
 align-items: center;
 }
 
-header img {
-    color: black;
+.user {
+    display: flex;
+    align-items: center;
+}
+
+.user img {
     width: 50px;
+    border-radius: 50%;
+    border: thin #502E7D;
+}
+
+.user p {
+    letter-spacing: 2px;
+    font-family: 'Sen', sans-serif;
+    font-size: 15px;
+    text-decoration: none;
+    color: #502E7D;
+    padding: 15px;
 }
 
 header a {
@@ -27,7 +42,7 @@ header a {
     font-family: 'Sen', sans-serif;
     font-size: 15px;
     text-decoration: none;
-    color: black;
+    color: #502E7D;
 }
 
 header ul {
@@ -47,7 +62,7 @@ header ul li a {
     cursor: pointer;
     font-family: 'Sen', sans-serif;
     font-size: 20px;
-    color: black;
+    color: #502E7D;
     border-radius: 20px;
 }
 

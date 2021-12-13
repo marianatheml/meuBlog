@@ -1,0 +1,55 @@
+.title {
+    font-family: 'Nunito', sans-serif;
+    font-size: 65px;
+    color: #502E7D;
+    font-weight: bold;
+    letter-spacing: 7px;
+    margin-top: 40px;
+}
+
+.subtitle {
+    font-family: 'Nunito', sans-serif;
+    font-size: 35px;
+    color: #502E7D;
+    font-weight: 900;
+}
+
+.row {
+    margin: 0 180px;
+}
+
+.buttonbox {
+    display: flex;
+    justify-content: left;
+}
+
+.buttonbox a {
+    padding-left: 15px;
+}
+
+.titlebuttons{
+    width: 180px;
+    height: 35px;
+    background: linear-gradient(90deg, #502E7D 33.85%, #F4143C 100%);
+    border-radius: 80px;
+    font-family: 'Nunito', sans-serif;
+    font-size: 15px;
+    color: white;
+    font-weight: bold;
+    border: none;
+}
+
+.titlebuttons:hover {
+    background: linear-gradient(90deg, #F4143C 50.85%, #502E7D 100%);
+    transform: scale(0.95);
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in;
+    transition-property: all
+}
+
+.nav-link {
+    font-family: 'Sen', sans-serif;
+    letter-spacing: 2px;
+    font-size: 15px;
+    color: #502E7D;
+}
