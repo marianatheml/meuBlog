@@ -7,14 +7,15 @@
 }
 
 header {
-position: static;
-top: 0;
-left: 0;
-width: 100%;
-padding: 5px 200px;
-display: flex;
-justify-content: space-between;
-align-items: center;
+    position: static;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 5px 200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
 }
 
 .user {
@@ -33,7 +34,7 @@ align-items: center;
     font-family: 'Sen', sans-serif;
     font-size: 15px;
     text-decoration: none;
-    color: #502E7D;
+    color: white;
     padding: 15px;
 }
 
@@ -42,7 +43,6 @@ header a {
     font-family: 'Sen', sans-serif;
     font-size: 15px;
     text-decoration: none;
-    color: #502E7D;
 }
 
 header ul {
@@ -62,7 +62,7 @@ header ul li a {
     cursor: pointer;
     font-family: 'Sen', sans-serif;
     font-size: 20px;
-    color: #502E7D;
+    color: white;
     border-radius: 20px;
 }
 
@@ -71,6 +71,4 @@ header ul li a:hover {
     color: white;
     transform: scale(0.9);
     transition-duration: 0.3s;
-    transition-timing-function: ease-in;
-    transition-property: all;
 }

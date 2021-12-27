@@ -25,7 +25,6 @@ export class NavbarComponent implements OnInit {
     environment.nome = ''
     environment.token = ''
     environment.id = 0
-
   }
 
 }

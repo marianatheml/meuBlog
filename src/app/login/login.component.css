@@ -1,94 +1,186 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito&family=Sen:wght@700&display=swap');
 
-#img-bg {
-    background-image: url('../../assets/loginillustration.png');
-    min-height: 100vh;
-    background-position:center ;
-    background-size: cover;
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.loginpage {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    background-color: #100b11;
+    background-image: url(https://i.imgur.com/MGCBeNJ.png);
+    background-position: left;
     background-repeat: no-repeat;
+    height: 100vh;
+    width: 100vw;
+}
+
+.loginform {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 410px;
+    height: 500px;
+    padding: 30px;
+    margin: 0 60%;
+    background-color: white;
+    border-radius: 25px;
 }
 
 .login-title a {
     display: flex;
+    align-items: center;
     text-decoration: none;
     letter-spacing: 7px;
     font-family: 'Nunito', sans-serif;
-    font-size: 38px;
+    font-size: 30px;
     font-weight: bold;
     color: #502E7D;
-    align-items: center;
-    justify-content: space-between;
 }
 
 .login-title a img {
-    width: 110px;
+    width: 100px;
+    margin: 0 10px 0 0;
 }
 
 .login-subtitle {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    width: 350px;
+    margin: 15px 0  0;
     font-family: 'Nunito', sans-serif;
-    font-size: 12px;
-    margin: 15px 0;
+    font-size: 18px;
 }
 
 .login-subtitle p {
-    color: black;   
+    color: #502E7D;   
 }
 
 .login-subtitle a {
-    color: #502E7D;
+    color: #F4143C;
+    font-weight: bold;
     text-decoration: none;
 }
 
 .login-subtitle a:hover {
-    color: #F4143C;
-    font-weight: bold;
+    color: #502E7D;
+    text-decoration: underline #502E7D;
 }
 
 hr {
     color: #502E7D;
+    width: 350px;
+    margin-top: 20px;
+}
+
+.form-group {
+    margin: 10px 0;
 }
 
 .form-group label {
     display: flex;
     flex-direction: column;
     font-family: 'Nunito', sans-serif;
-    font-size: 20px;
-    color: #502E7D;
+    font-size: 25px;
+    color: #F4143C;
     font-weight: bold;
 }
 
 .form-field {
     font-family: 'Nunito', sans-serif;
-    font-size: 14px;
+    font-size: 18px;
     color: #726CA0;
+    margin: 5px 0;
     padding: 10px;
     border-radius: 25px;
-    width: 100%;
+    width: 350px;
+    height: 50px;
     border: thin  solid  #726CA0;
 }
 
 .form-field:focus {
-    border: medium  groove  #502E7D;
+    border: 3px groove #502E7D;
     border-color: #502E7D;
     outline: 0;
+    box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.29);
+}
+
+.buttons {
+    display: flex;
+    align-items: center;
+    margin-top: 18px;
 }
 
 button{
-width: 200px;
-height: 50px;
-background: linear-gradient(90deg, #502E7D 33.85%, #F4143C 100%);
-border-radius: 80px;
-font-family: 'Nunito', sans-serif;
-font-size: 20px;
-color: white;
-font-weight: bold;
-border: none;
-}
+    width: 350px;
+    height: 50px;
+    background: linear-gradient(90deg, #502E7D 33.85%, #F4143C 100%);
+    border-radius: 80px;
+    font-family: 'Nunito', sans-serif;
+    font-size: 20px;
+    color: white;
+    font-weight: bold;
+    box-shadow: 0px 5px 8px 1px rgba(0, 0, 0, 0.29);
+    }
 
 button:hover {
     background: linear-gradient(90deg, #F4143C 50.85%, #502E7D 100%);
-    transform: scale(0.95);
-    transition-duration: 0.5s;
+    transform: scale(1.03);
+    transition-duration: 0.3s;
     transition-timing-function: ease-in;
     transition-property: all;
+}
+
+@media (max-width: 1300px) {
+
+    .loginpage {
+        justify-content: center;
+    }
+    .loginform {
+        justify-content: center;
+        width: 450px;
+    }
+}
+
+@media (max-width: 750px) {
+    
+    .loginpage {
+        background-size: cover;
+        padding: 50px;
+    }
+
+    .loginform {
+        display: flex;
+        justify-content:center;
+        width: 350px;
+        margin: 0 45px;
+    }
+
+    .form-field {
+        width: 300px;
+    }
+
+    .buttons {
+        width: 300px;
+    }
+
+    .login-title{
+        width: 300px;
+    }
+
+    .login-subtitle{
+        width: 300px;
+    }
+
+    hr {
+        width: 300px;
+    }
+
+    .login-title a img {
+        width: 80px;
+        margin: 0 15px 0 0;
+    }
 }

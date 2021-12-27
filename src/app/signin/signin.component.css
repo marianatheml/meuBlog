@@ -1,48 +1,71 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito&family=Sen:wght@700&display=swap');
 
-#img-bg {
-    background-image: url('../../assets/loginillustration.png');
-    min-height: 100vh;
-    background-position:center ;
-    background-size: cover;
-    background-repeat: no-repeat;
+* {
+    margin: 0;
+    padding: 0;
 }
 
-.login-title a {
+.signinpage {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    background-color: #100b11;
+    background-image: url(https://i.imgur.com/M64K70O.png);
+    background-position: right;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100vw;
+}
+
+.signinform {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+    width: 750px;
+    height: 550px;
+    padding: 50px 0;
+    margin: 0 10%;
+    background-color: white;
+    border-radius: 25px;
+}
+
+
+.signin-title a {
     display: flex;
     text-decoration: none;
     letter-spacing: 7px;
     font-family: 'Nunito', sans-serif;
-    font-size: 32px;
+    font-size: 28px;
     font-weight: bold;
     color: #502E7D;
     align-items: center;
     padding: 25px 0 0 25px;
 }
 
-.login-title a img {
-    width: 110px;
+.signin-title a img {
+    width: 85px;
     margin-right: 20px;
 }
 
-.login-subtitle {
+.signin-subtitle h2 {
     font-family: 'Nunito', sans-serif;
-    font-size: 22px;
+    font-size: 28px;
     font-weight: bolder;
     letter-spacing: 2px;
-    padding: 30px 25px 0 25px;
-    color: #502E7D; 
+    padding: 15px 25px 0 25px;
+    color: #F4143C; 
 }
 
 hr {
     color: #502E7D;
-    margin: 15px;
+    margin: 5px 20px;
 }
 
 .form {
     display: flex;
     justify-content: space-evenly;
-    padding: 0 25px 0 25px;
+    padding: 0 20px 0 25px;
 }
 
 .form-group {
@@ -50,19 +73,21 @@ hr {
     flex-direction: column;
     font-family: 'Nunito', sans-serif;
     font-size: 20px;
-    color: #502E7D;
+    color: #F4143C;
     font-weight: bold;
+    margin: 5px 0;
 }
 
 .form-field {
     font-family: 'Nunito', sans-serif;
-    font-size: 14px;
+    font-size: 16px;
     color: #726CA0;
-    padding: 10px;
+    padding: 8px;
     align-items: center;
     border-radius: 25px;
     width: 250px;
     border: thin  solid  #726CA0;
+    margin: 8px 0;
 }
 
 .form-field:focus {
@@ -71,21 +96,121 @@ hr {
     outline: 0;
 }
 
-button{
-    width: 150px;
-    height: 40px;
-    background: #502E7D;
-    border-radius: 80px;
-    font-family: 'Nunito', sans-serif;
-    font-size: 15px;
-    color: white;
-    font-weight: bold;
+.buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
 }
 
+button{
+    width: 530px;
+    height: 45px;
+    background: linear-gradient(90deg, #502E7D 33.85%, #F4143C 100%);
+    border-radius: 80px;
+    font-family: 'Nunito', sans-serif;
+    font-size: 20px;
+    color: white;
+    font-weight: bold;
+    box-shadow: 0px 5px 8px 1px rgba(0, 0, 0, 0.29);
+    }
+
 button:hover {
-    background: #F4143C;
-    transform: scale(0.95);
+    background: linear-gradient(90deg, #F4143C 50.85%, #502E7D 100%);
+    transform: scale(1.03);
     transition-duration: 0.3s;
     transition-timing-function: ease-in;
     transition-property: all;
+}
+
+.signin-text {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin: 25px 30px;
+    font-family: 'Nunito', sans-serif;
+    font-size: 18px;
+}
+
+.signin-text p {
+    color: #502E7D;   
+}
+
+.signin-text a {
+    color: #F4143C;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.signin-text a:hover {
+    color: #502E7D;
+    text-decoration: underline #502E7D;
+}
+
+@media (max-width: 1200px) {
+
+    .signinpage {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-size: cover;
+    }
+    .signinform {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 800px) {
+
+    .signinpage {
+        padding: 500px 200px;
+    }
+
+    .signinform {
+        justify-content: center;
+        width: 400px;
+        height: 880px;
+        padding: 25px;
+        border-radius: 15px;
+        margin: 0;
+    }
+
+    .form {
+        flex-direction: column;
+    }
+
+    .form-field {
+        width: 300px;
+    }
+
+}
+
+@media (max-width: 500px) {
+
+    .signinpage {
+        padding: 480px 200px;
+    }
+
+    .signinform {
+        width: 320px;
+    }
+
+    .signin-title a img {
+        width: 80px;
+        margin-right: 15px;
+    }
+
+    .signin-title a {
+        letter-spacing: 7px;
+        font-size: 20px;
+    }
+
+    .form-field {
+        font-size: 14px;
+        padding: 8px;
+        border-radius: 20px;
+        width: 220px;
+    }
+    
+
 }
